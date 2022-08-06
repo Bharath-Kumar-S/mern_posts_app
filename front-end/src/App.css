@@ -4,25 +4,28 @@ input {
   width: 10rem;
 }
 
+body {
+  background-color: cornflowerblue;
+}
+
+.app-container{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.nav{
-  padding: auto;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  background-color:#cceeaa;
-  /* color: white; */
-}
-
 form {
   background-color: aquamarine;
-  height: 25rem;
+  height: fit-content;
   width: 15rem;
+  padding-bottom: 2rem;
 }
 
 label {
@@ -43,7 +46,17 @@ button {
 }
 
 ul {
+  /* text-align: center; */
+  display: flex;
+justify-content: center;
   list-style-type: none;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  padding-right: 2.5rem;
+  padding-left: 2rem;
+  background-color: #dddddd;
 }

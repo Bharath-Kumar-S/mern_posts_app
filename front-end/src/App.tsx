@@ -6,16 +6,18 @@ import Register from './components/user/register';
 function App() {
   return (
     <BrowserRouter>
-    <nav className='nav'>
-        <Link to="/login">Login</Link>
-        <Link to="/register">Register</Link>
-    </nav>
-      <div className="App">
-        <Routes>
+      <section className='app-container'>
+        <ul>
+          <li> <Link to="/login">Login</Link> </li>
+          <li> <Link to="/register">Register</Link> </li>
+        </ul>
+        <div className="App">
+          <Routes>
             <Route path='login' element={<Login />} />
             <Route path='register' element={<Register />} />
-        </Routes>
-      </div>
+          </Routes>
+        </div>
+      </section>
     </BrowserRouter>
   );
 }
