@@ -1,0 +1,49 @@
+input {
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  width: 10rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav{
+  padding: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color:#cceeaa;
+  /* color: white; */
+}
+
+form {
+  background-color: aquamarine;
+  height: 25rem;
+  width: 15rem;
+}
+
+label {
+  padding: 1rem;
+  align-self: start;
+  margin-left: 1rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 1rem;
+  padding: 1rem;
+}

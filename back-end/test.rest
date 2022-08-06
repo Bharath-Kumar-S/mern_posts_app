@@ -1,0 +1,48 @@
+GET http://localhost:5000/posts
+#####
+
+GET http://localhost:5000/posts/62ee64bda5b8d8c93b1dc673
+
+#####
+
+POST http://localhost:5000/posts
+Content-Type: application/json
+
+{
+    "title": "Chennai Visit",
+    "user": "Bharath Kumar"
+}
+
+#######
+
+DELETE http://localhost:5000/posts/62ee6fa076fcb1274392b1e0
+
+
+####
+
+GET http://localhost:5000/users
+#####
+
+GET http://localhost:5000/users/
+
+#####
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "user": "Bharath Kumar",
+    "password": "@Hpe1234",
+    "first_name": "Bharath",
+    "last_name": "Kumar",
+    "date_of_birth": "12/2/1994",
+    "phone_number": "9003045843",
+    "location": {
+        "city": "Tallinn",
+        "zip_code": "10620"
+    }
+}
+
+#######
+
+DELETE http://localhost:5000/users/62ee6fa076fcb1274392b1e0
