@@ -2,9 +2,13 @@ import './App.css';
 import { Route, Routes, BrowserRouter, Link } from 'react-router-dom';
 import Login from './components/user/login';
 import Register from './components/user/register';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
+    <QueryClientProvider client={queryClient}>
     <BrowserRouter>
       <section className='app-container'>
         <ul>
@@ -19,6 +23,7 @@ function App() {
         </div>
       </section>
     </BrowserRouter>
+    </QueryClientProvider>
   );
 }
 
